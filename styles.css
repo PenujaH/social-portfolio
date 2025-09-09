@@ -38,9 +38,15 @@ main{
 
 }
 
+.main-2{
+    display: flex;
+    flex-direction: column;
+}
+
 .profile{
     padding: 30px 20px;
     border-bottom: 1px solid #e2e1e1;
+    margin: 0;
 }
 
 .username{
@@ -97,18 +103,157 @@ main{
     text-decoration: none;
 }
 
-.content{
-    margin: 10px 0
+.content{ 
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    padding: 0 0;
+    flex-direction: column;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .project-title{
     margin: 0;
     padding: 0 20px 10px 20px;
+    margin-bottom: 30px;
     font-size: 17px;
     font-weight: 500;
     border-bottom: 1px solid #e2e1e1;
 }
 
 .projects{
-    padding: 20px;
+    padding: 20px 20px;
+    margin: 0;
+    display: flex;
+}
+
+.projects a{
+    width: 90%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
+.project-info{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.project-heading{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.author{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+@media (min-width: 600px){
+    .projects{
+        padding: 0 20px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-self: start;
+
+    }
+
+    .projects a{
+        width: 48%;
+    }
+
+    .project{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner{
+        height: 200px;
+
+    }
+
+    .profile-pic{
+        top: 155px;
+    }
+
+    .profile-main{
+        height: 250px;
+    }
+
+    .main-2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-title{
+        position: absolute;
+        border-bottom: 2px solid #00000038;
+    }
+
+    .profile{
+        width: 40%;
+    }
+
+    .content{
+        width: 60%;
+    }
+
+    .project{
+        width: 100%;
+        height: 190px;
+    }
+
+    .projects a{
+        width: 48%;
+        margin-bottom: 50px;
+    }
+
+    .projects{
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding-top: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects a{
+        width: 30%;
+    }
 }
