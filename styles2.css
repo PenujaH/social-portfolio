@@ -59,7 +59,7 @@ main{
     gap: 10px;
 }
 
-.video-gallery video{
+.video-gallery video, .video-gallery img{
     width: 99%;
     height: 300px;
     object-fit: cover;
@@ -71,7 +71,7 @@ main{
         height: 400px;
     }
 
-    .video-gallery video {
+    .video-gallery video, .video-gallery img {
         width: 49%;
     }
 }
