@@ -52,8 +52,26 @@ main{
     font-weight: 700;
 }
 
+.video-gallery{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.video-gallery video{
+    width: 99%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
 @media (min-width: 600px){
     .thumbnail{
         height: 400px;
+    }
+
+    .video-gallery video {
+        width: 49%;
     }
 }
