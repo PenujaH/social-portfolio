@@ -175,11 +175,16 @@ main{
     padding: 0;
     margin-bottom: 20px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+    color: #aaa;
     font-size: 14px;
 }
 
-@media (min-width: 600px){
+footer a{
+    text-decoration: none;
+    color: #aaa;
+}
+
+@media (min-width: 615px){
     .projects{
         padding: 0 20px;
         margin: 0;
@@ -225,6 +230,7 @@ main{
 
     .profile{
         width: 40%;
+        border-bottom: none;
     }
 
     .content{
